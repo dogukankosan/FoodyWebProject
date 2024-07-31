@@ -1,0 +1,37 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "KategoriEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="card-body">
+    <div class="col-md-8">
+    <div class="row">
+            <div class="card-header">
+                <div class="card-title">Yeni Kategori Ekle</div>
+                <hr />
+            </div>
+            <div class="form-group">
+                <form action="~/Kategori/Ekle" method="post">
+                    <label for="email2">Kategori Adı</label>
+                    <input type="text"
+                        name="CategoryName"
+                           class="form-control"
+                           id=""
+                           placeholder="Kategori Adı Giriniz.." />
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="checkbox"
+                               value=""
+                               name="CategoryStatus"
+                               id="CategoryStatus" />
+                        <label class="form-check-label"
+                               for="flexCheckDefault">
+                            Kategori Durum Aktif
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-info">Kategori Ekle</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>

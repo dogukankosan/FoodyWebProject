@@ -1,0 +1,48 @@
+﻿@using EntityLayer.Concrete
+@model List<Category>
+@{
+    ViewData["Title"] = "KategoriListesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    string status = default,statusClass=default;
+}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Kategoriler</div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Kategorİ Adı</th>
+                                <th>Kategorİ Durum</th>
+                                <th>Kategorİ Güncelle</th>
+                                <th>Kategorİ Sİl</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                foreach (EntityLayer.Concrete.Category item in Model)
+                                {
+                                    status = item.CategoryStatus ? "Aktif" : "Pasif";
+                                    statusClass = item.CategoryStatus ? "alert-success" : "alert-danger";
+                                    <tr>
+                                        <th scope="row">@item.CategoryID</th>
+                                        <td>@item.CategoryName</td>
+                                        <td><a href="#" class="alert @statusClass">@status</a></td>
+                                        <td><a href="~/Kategori/Guncelle/@item.CategoryID" class="btn btn-primary">GÜNCELLE</a></td>
+                                        <td><a href="~/Kategori/Sil/@item.CategoryID" class="btn btn-danger">SİL</a></td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div><a href="~/Kategori/Ekle" class="btn btn-info">Yeni Kategori Ekle</a></div>
+            </div>
+        </div>
+    </div>
+</div>

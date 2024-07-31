@@ -7,7 +7,7 @@ namespace EntityLayer.Concrete
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public byte CategoryID { get; set; }
+        public int CategoryID { get; set; }
         [MaxLength(50)]
         public required string CategoryName { get; set; }
         public bool CategoryStatus { get; set; } = false;

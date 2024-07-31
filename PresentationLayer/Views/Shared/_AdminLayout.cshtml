@@ -1,0 +1,287 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Türkiye genelinde en uygun fiyatlarla satılık ve kiralık daireler, villalar ve iş yerleri. Emlak yatırımlarınız için profesyonel danışmanlık hizmeti.">
+    <meta name="keywords" content="satılık daire, kiralık daire, satılık villa, emlak, gayrimenkul, satılık iş yeri, emlak danışmanlık,villa,yazlık,daire">
+    <meta name="author" content="Doğukan Koşan">
+    <link rel="canonical" href=" url ayarla www.emlaksatis.com">
+    <meta property="og:title" content="Emlak Satis">
+    <meta property="og:description" content="Türkiye genelinde en uygun fiyatlarla satılık ve kiralık daireler, villalar ve iş yerleri. Emlak yatırımlarınız için profesyonel danışmanlık hizmeti.">
+    <meta property="og:url" content="url ayarla">
+    <meta property="og:image" content="resim bulucaz">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="resim bulucaz">
+    <meta name="twitter:title" content="Emlak Satis">
+    <meta name="twitter:description" content="Türkiye genelinde en uygun fiyatlarla satılık ve kiralık daireler, villalar ve iş yerleri. Emlak yatırımlarınız için profesyonel danışmanlık hizmeti.">
+    <meta name="twitter:image" content="resim bulucaz">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AdminPanel - @ViewData["Title"]</title>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+          name="viewport" />
+    <link rel="icon"
+          href="~/adminTemp/assets/img/kaiadmin/favicon.ico"
+          type="image/x-icon" />
+    <script src="~/adminTemp/assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: { families: ["Public Sans:300,400,500,600,700"] },
+            custom: {
+                families: [
+                    "Font Awesome 5 Solid",
+                    "Font Awesome 5 Regular",
+                    "Font Awesome 5 Brands",
+                    "simple-line-icons",
+                ],
+                urls: ["assets/css/fonts.min.css"],
+            },
+            active: function () {
+                sessionStorage.fonts = true;
+            },
+        });
+    </script>
+    <link rel="stylesheet" href="~/adminTemp/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/adminTemp/assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="~/adminTemp/assets/css/kaiadmin.min.css" />
+    <link rel="stylesheet" href="~/adminTemp/assets/css/demo.css" />
+</head>
+<body>
+        <div class="sidebar" data-background-color="dark">
+            <div class="sidebar-logo">
+                <div class="logo-header" data-background-color="dark">
+                    <a href="~/Admin/Panel" class="logo">
+                        <img src="~/adminTemp/assets/img/kaiadmin/logo_light.svg"
+                             alt="navbar brand"
+                             class="navbar-brand"
+                             height="20" />
+                    </a>
+                    <div class="nav-toggle">
+                        <button class="btn btn-toggle toggle-sidebar">
+                            <i class="gg-menu-right"></i>
+                        </button>
+                        <button class="btn btn-toggle sidenav-toggler">
+                            <i class="gg-menu-left"></i>
+                        </button>
+                    </div>
+                    <button class="topbar-toggler more">
+                        <i class="gg-more-vertical-alt"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="sidebar-wrapper scrollbar scrollbar-inner">
+                <div class="sidebar-content">
+                    <ul class="nav nav-secondary">
+                        <li class="nav-section">
+                            <span class="sidebar-mini-icon">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </span>
+                            <h4 class="text-section">Sayfalar</h4>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Kategori/Liste">
+                                <i class="fas fa-battery-full"></i>
+                                <p>Kategoriler</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Ürünler</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Page</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Slider</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Hakkında</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Özellik</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Özellik</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Yorumlar</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Mesajlar</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>İletişim</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Sosyal Medya</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Ayarlar</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>
+                                <p>Çıkış Yap</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel">
+            <div class="main-header">
+                <div class="main-header-logo">
+                    <div class="logo-header" data-background-color="dark">
+                        <a href="index.html" class="logo">
+                            <img src="~/adminTemp/assets/img/kaiadmin/logo_light.svg"
+                                 alt="navbar brand"
+                                 class="navbar-brand"
+                                 height="20" />
+                        </a>
+                        <div class="nav-toggle">
+                            <button class="btn btn-toggle toggle-sidebar">
+                                <i class="gg-menu-right"></i>
+                            </button>
+                            <button class="btn btn-toggle sidenav-toggler">
+                                <i class="gg-menu-left"></i>
+                            </button>
+                        </div>
+                        <button class="topbar-toggler more">
+                            <i class="gg-more-vertical-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+                    <div class="container-fluid">
+                        @await Component.InvokeAsync("HeaderSearchComponentPartial")
+                        <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                            <li class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none">
+                               
+                            </li>
+                            <li class="nav-item topbar-icon dropdown hidden-caret">
+                                <a class="nav-link dropdown-toggle"
+                                   href="#"
+                                   id="messageDropdown"
+                                   role="button"
+                                   data-bs-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                @await Component.InvokeAsync("HeaderMessageComponentPartial")
+                            </li>
+                            @await Component.InvokeAsync("HeaderNotificationComponentPartial")
+                            @await Component.InvokeAsync("HeaderAdminComponentPartial")       
+                    </ul>
+            </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="page-inner">
+                    @RenderBody()
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+                <nav class="pull-left">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.themekita.com">
+                                ThemeKita
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Help </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Licenses </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    2024, Tasarlayan <i class="fa fa-heart heart text-danger"></i>
+                    <a target="_blank" href="https://github.com/dogukankosan">Doğukan Koşan</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="~/adminTemp/assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="~/adminTemp/assets/js/core/popper.min.js"></script>
+    <script src="~/adminTemp/assets/js/core/bootstrap.min.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/chart.js/chart.min.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/chart-circle/circles.min.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/datatables/datatables.min.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/jsvectormap/world.js"></script>
+    <script src="~/adminTemp/assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <script src="~/adminTemp/assets/js/kaiadmin.min.js"></script>
+    <script src="~/adminTemp/assets/js/setting-demo.js"></script>
+    <script src="~/adminTemp/assets/js/demo.js"></script>
+    <script>
+        $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+            type: "line",
+            height: "70",
+            width: "100%",
+            lineWidth: "2",
+            lineColor: "#177dff",
+            fillColor: "rgba(23, 125, 255, 0.14)",
+        });
+
+        $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+            type: "line",
+            height: "70",
+            width: "100%",
+            lineWidth: "2",
+            lineColor: "#f3545d",
+            fillColor: "rgba(243, 84, 93, .14)",
+        });
+
+        $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+            type: "line",
+            height: "70",
+            width: "100%",
+            lineWidth: "2",
+            lineColor: "#ffa534",
+            fillColor: "rgba(255, 165, 52, .14)",
+        });
+    </script>
+</body>
+</html>
